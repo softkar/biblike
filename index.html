@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>biblike</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Biblike" />
+    <link rel="manifest" href="site.webmanifest" />
+</head>
+  
+  <body>
+    <header>
+      <div class="verh">
+        <div class=main_header>
+          <p>Добро пожаловать<br>в<br>электронную библиотеку</p> <h1>Biblike!</h1>
+        </div>
+        <div class=sub_header>
+          <h2>Здесь Вы найдете множество книг на свой вкус и сможете определиться с тем что хотите почитать используя аннотацию каждой книги добавленной на сайт.</h2>
+        </div>
+      </div>
+    </header>
+    <div class="osnova">
+
+      <aside class="sidebar">
+        <form>
+            <div class="widget"> <!-- не функционально -->
+                <div class="widget_title">Фильтры (в разработке)</div>
+                <div class="widget_body">
+                    <div class="location">
+                      <div class="location__row">
+                        <input type="checkbox" value="0-10" id="0" class="location_input">
+                        <label class="location_label" for='0'>0-10</label>
+                        <input type="checkbox" value="10-20" id="1" class="location_input">
+                        <label class="location_label" for='1'>10-20</label>
+                        <input type="checkbox" value="20-30" id="2" class="location_input">
+                        <label class="location_label" for='2'>20-30</label>
+                        <input type="checkbox" value="30+" id="3" class="location_input">
+                        <label class="location_label" for='3'>30+</label>
+                      </div>
+          
+                      <div class="location__row">
+                        <input type="checkbox" id="4" class="location_input">
+                        <label class="location_label" for='4'>Любой</label>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget">
+                <div class="widget_title">Авторы</div>
+                <div class="widget_body">
+                    <label class="radio_group">
+                        <input class="radio_button" name="radio_button" type="radio">
+                        <span class="radio_fake"></span>
+                        <span class="radio_title">Дж. К. Роулинг</span>
+                    </label>
+                    <label class="radio_group">
+                        <input class="radio_button" name="radio_button" type="radio">
+                        <span class="radio_fake"></span>
+                        <span class="radio_title">Дмитрий Мордас</span>
+                    </label>
+                    <label class="radio_group">
+                        <input class="radio_button" name="radio_button" type="radio">
+                        <span class="radio_fake"></span>
+                        <span class="radio_title">Артём Каменистый</span>
+                    </label>
+                    <label class="radio_group">
+                        <input class="radio_button" name="radio_button" type="radio">
+                        <span class="radio_fake"></span>
+                        <span class="radio_title">Адам Кристофер</span>
+                    </label>
+                </div>
+            </div>
+            <div class="widget">
+              <div class="widget_title">Жанры</div>
+              <div class="widget_body">
+                <label class="checkbox__group">
+                  <input class="checkbox_button" type="checkbox">
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Фантастика</span>
+                  </label>
+                <label class="checkbox__group">
+                        <input class="checkbox_button" type="checkbox">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Боевик</span>
+                  </label>
+                <label class="checkbox__group">
+                        <input class="checkbox_button" type="checkbox">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Авантюрный</span>
+                  </label>
+                <label class="checkbox__group">
+                        <input class="checkbox_button" type="checkbox">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Ужасы</span>
+                  </label>
+                <label class="checkbox__group">
+                        <input class="checkbox_button" type="checkbox">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Постапокалипсис</span>
+                  </label>
+                  <!-- </div>
+                  <button class="wiew_more">Показать ещё</button>
+                </div> -->
+              </div>
+              <div class="widget">
+                <div class="widget_body">
+                  <label class="toggle">
+                    <input class="toggle_button" type="checkbox">
+                    <span class="toggle__fake"></span>
+                    <span class="toggle__title">в разработке</span>
+                    </label>
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget_body">
+                  <button class="filter btn_submit">Применить фильтр</button>
+                  <button class="filter">Сбросить фильтр</button>
+                </div>
+              </div>
+            </form>
+      </aside>
+
+      <section>
+        <div class="container">
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/Digital-Harry-Potter-1.jpg" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>Гарри Поттер и философский камень</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>Гарри Поттер узнает, что зачислен в Школу чародейства и волшебства из письма, которое принесла сова.</span>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/Digital-Harry-Potter-2.jpg" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>Гарри Поттер и тайная комната</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>В школе «Хогварц» происходят тревожные события. Кто-то нападает на учеников, и преподаватели подозревают, что это таинственное чудовище, которое скрывается в легендарной Тайной комнате.</span>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/Digital-Harry-Potter-3.jpg" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>Гарри Поттер и пленник азкабана</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>Двенадцать долгих лет в Азкабане - мрачной тюрьме волшебного мира - содержался Сириус Блэк. И вот он бежал и поставил целью избавиться от Гарри Поттера.</span>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/Digital-Harry-Potter-4.jpg" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>Гарри Поттер и кубок огня</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>Гарри Поттер участвует в "Кубке огня"</span>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/Digital-Harry-Potter-5.jpg" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>Гарри Поттер и орден феникса</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>Гарри Поттер уверен, что Волан-де-Морт возродился и скоро начнет действовать.</span>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/corroded.jpg" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>Dishonored Порченый</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>В Дануолле появляется странный человек. Он владеет силами, которыми некогда обладал ассасин, известный под именем Дауд. Опасаясь, что вернулся их смертный враг, Эмили и Корво бросаются в схватку со временем.</span>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/sticks.jpg" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>S-T-I-K-S Зовите меня форс-мажор</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>Когда-то Трэш был бессильным существом в клетке, над которым издевались все, кто только хотел. Но он наконец вырвался на свободу и отчетливо осознал, что не успокоится, пока не отомстит каждому своему обидчику.</span>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/bunny.jpg" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>Зайчик</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>Пятиклассник Антон Петров вместе с родителями и младшей сестрой Олей переезжает в посёлок, затерявшийся среди лесов. Мальчику предстоит уживаться с новыми одноклассниками, привыкать к новому дому и остерегаться того, что притаилось за окном.</span>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/girs_last_tour.jpg" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>Последнее путешествие девочек</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>История повествует о Чито и Юри, двух девочках, которые передвигаются по развалинам цивилизации, опустошённой войной. День ото дня они путешествуют на модифицированном Kettenkrad в поисках пищи и ресурсов. Серые и безнадёжные дни сменяют друг друга, но, пока девочки вместе, даже в самых мрачных моментах они находят что-то светлое.</span>
+            </ul>
+          </div>
+          <!-- <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="путь к изображению" alt="">
+              </div>
+              <div class="contentBx">
+                <h3>Название</h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <span>Аннотация</span>
+            </ul>
+          </div> -->
+        </div>
+      </section>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
